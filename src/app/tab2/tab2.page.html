@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Two
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>DEPT</ion-label>
+    <ion-select value="IT" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="IT">it</ion-select-option>
+      <ion-select-option value="CSE">cs</ion-select-option>
+      <ion-select-option value="MECH">mech</ion-select-option>
+      <ion-select-option value="CIVIL">civil</ion-select-option>
+      <ion-select-option value="EEE">eee</ion-select-option>
+      <ion-select-option value="ECE">ece</ion-select-option>
+    </ion-select>
+  </ion-item>
+    
+    <ion-item>
+      <ion-label>semester</ion-label>
+    <ion-select value="1" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="1">1</ion-select-option>
+      <ion-select-option value="2">2</ion-select-option>
+      <ion-select-option value="3">3</ion-select-option>
+      <ion-select-option value="4">4</ion-select-option>
+      <ion-select-option value="5">5</ion-select-option>
+      <ion-select-option value="6">6</ion-select-option>
+      <ion-select-option value="7">7</ion-select-option>
+      <ion-select-option value="8">8</ion-select-option>
+      
+  
+    </ion-select>
+    
+  </ion-item>
+  <ion-item>
+    <ion-button color="primary" (click)="toggleSubject()">submit</ion-button>
+    
+  </ion-item>
+<ion-item *ngIf="subjectClicked" >
+  <ion-select value="CG" okText="Okay" cancelText="Dismiss">
+    <ion-select-option value="CG">CG</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+    <ion-select-option value="5">5</ion-select-option>
+    <ion-select-option value="6">6</ion-select-option>
+    <ion-select-option value="7">7</ion-select-option>
+    <ion-select-option value="8">8</ion-select-option>
+    
+
+  </ion-select>
+</ion-item>
+</ion-content>
